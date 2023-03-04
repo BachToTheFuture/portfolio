@@ -1,0 +1,248 @@
+
+:root {
+  --theme: 216, 232, 251;
+}
+
+@font-face {
+  font-family: Vividly;
+  src: url(assets/Vividly-Regular.ttf);
+}
+
+body {
+  background-color: rgb(var(--theme));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.12'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  padding: 5vh 20px 30px 20px;
+  font-family: 'Vividly', Arial, Helvetica, sans-serif;
+  color: #444;
+  overflow: hidden;
+  transition: ease background 0.5s;
+}
+
+.header {
+  position: relative;
+  align-items: center;
+  text-align : center;
+  z-index: 100;
+}
+
+h1 {
+  opacity: 90%;
+  font-size: 3.5rem;
+  margin-top: -20px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  opacity: 60%;
+  margin-top: -20px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  opacity: 60%;
+  margin-top: 15px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Ipod layout */
+.items {
+  margin-top: 40px;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  margin-left: -100px;
+  position: relative;
+  transform: rotate(30deg);
+}
+
+.ipod {
+  width: 800px;
+  min-width : 800px;
+  position: relative;
+}
+
+.screen {
+  position: absolute;
+  top: 89px;
+  left: 304px;
+  width: 155px;
+  height: 115px;
+  overflow: hidden;
+}
+
+/* UI */
+
+.menu {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+.arrow:after {
+  content: ' ▸';
+  position: absolute;
+  right: 10px;
+  opacity: 80%;
+}
+
+.play {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.play-left {
+  margin-left: 10px;
+  height: 70px;
+  overflow: hidden;
+}
+.play-right {
+  margin-left: -45px;
+  position: relative;
+}
+.play-artist {
+  margin-top: 10px;
+  line-height: 14px;
+  font-size: 1rem;
+}
+.progress {
+  height: 12px;
+  margin-top: 5px;
+  width: 132px;
+  margin-left: 10px;
+}
+.progress-bar {
+  background-color: rgb(var(--theme));
+  filter: brightness(90%);
+}
+.cover {
+  width: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  object-fit: cover;
+}
+
+p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: -5px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.menubar {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: -5px;
+  margin-top: -5px;
+  font-size: 1rem;
+}
+
+.selected {
+  background: rgb(var(--theme));
+  filter: brightness(95%);
+  transition: ease background 0.5s;
+}
+
+/* social icons */
+a {
+  font-size: 1.5rem;
+  margin: 5px;
+  color: #444;
+  opacity: 80%;
+  transition: ease all 0.2s;
+}
+a:hover {
+  color: rgb(var(--theme));
+  filter: brightness(70%);
+  transition: ease all 0.2s;
+  text-decoration: none;
+}
+.separator {
+  font-size: 2rem;
+  color: #444;
+  opacity: 40%;
+}
+
+/* The helper cat */
+.help {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cat {
+  margin-left: 300px;
+  z-index: 100;
+}
+.cat-tooltip {
+  position: absolute;
+  bottom: 120px;
+  margin-left: 300px;
+  font-size: 1.5rem;
+  z-index: 100;
+  opacity: 80%;
+  text-align: left;
+  line-height: 18px;
+  font-weight: 600;
+  background: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* control buttons */
+.btn-left {
+  position: absolute;
+  /* background: red; */
+  width: 50px;
+  height: 50px;
+  top: 270px;
+  left: 304px;
+}
+.btn-right {
+  position: absolute;
+  /* background: red; */
+  width: 50px;
+  height: 50px;
+  top: 270px;
+  left: 415px;
+}
+.btn-center {
+  position: absolute;
+  /* background: green; */
+  width: 50px;
+  height: 50px;
+  top: 270px;
+  left: 360px;
+}
+.btn-up {
+  position: absolute;
+  /* background: blue; */
+  width: 50px;
+  height: 50px;
+  top: 220px;
+  left: 360px;
+}
+.btn-down {
+  position: absolute;
+  /* background: blue; */
+  width: 50px;
+  height: 50px;
+  top: 320px;
+  left: 360px;
+}
+
+/* 404 page */
+.fourohfour {
+  font-size: 10rem;
+  margin-top: 100px;
+  margin-bottom: -50px;
+}

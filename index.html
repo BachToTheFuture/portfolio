@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Page style -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- like clippy, but its a cat! -->
+    <div class="help">
+        <img class="cat" src="assets/cat.png" width="200px;"/>
+        <p style='display: none' class="cat-tooltip"> pssst the iPod works :3</p>
+    </div>
+
+    <div class="header">
+        <h3 id='intro' class="intro">Hi! Ny name is</h3>
+        <h1 id='name' class="name">Bach Nguyen</h1>
+        <h2 id='desc' class="desc">Developer & music nerd</h2>
+        <div class="links">
+            <a href="#"><i class="fa fa-github"></i> github</a>
+            <span class="separator">/</span>
+            <a href="#"><i class="fa fa-linkedin-square"></i> linkedin</a>
+            <span class="separator">/</span>
+            <a href="#"><i class="fa fa-file-text"></i> resume</a>
+        </div>
+    </div>
+    <!-- items -->
+    <div class="items">
+        <div class="ipod">
+            <img src="assets/ipod.png" width="90%"/>
+            <div class="screen">
+                <!-- There are different views -->
+                <p class="menubar">iPod</p>
+                <div class="menu active"></div>
+                <div style="display: none;" class="play">
+                    <div class="row">
+                        <div class="col play-left">
+                            <img class="cover" style="background: #ddd"/>
+                        </div>
+                        <div class="col play-right">
+                            <p class="play-artist"> mysti <br> by bach nguyen </p>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:0;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- for navigation -->
+            <div class="buttons">
+                <div id="left" class="btn btn-left"></div>
+                <div id="right" class="btn btn-right"></div>
+                <div id="center" class="btn btn-center"></div>
+                <div id="up" class="btn btn-up"></div>
+                <div id="down" class="btn btn-down"></div>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer">Designed by Bach Nguyen</p>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="pages.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
