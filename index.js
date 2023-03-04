@@ -90,7 +90,7 @@ function enterPlayer(data) {
     $('.play').show();
     $('.menu').hide();
     $('.menu').removeClass('active');
-    $('.cover').attr("src", `/assets/${data.name.toLowerCase()}.png`);
+    $('.cover').attr("src", `assets/${data.name.toLowerCase()}.png`);
   }
 
   playPlayer();
