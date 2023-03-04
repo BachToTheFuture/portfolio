@@ -1,2 +1,2 @@
 # portfolio
-my portfolio website with just JS and HTML lol
+my portfolio website with just static JS and HTML lol
