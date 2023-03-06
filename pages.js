@@ -193,6 +193,7 @@ let data = [
         'name': 'p5js art',
         'color': '195, 201, 235',
         'desc': 'some procedurally generated art that i made using p5js',
+        'linkNewLine': true,
         'links': [
           {'icon': 'github', 'text': '"The Porcupine"', 'link': 'https://github.com/BachToTheFuture/p5js-art'},
           {'icon': 'github', 'text': '"Unknown Pleasures"', 'link': 'https://github.com/BachToTheFuture/p5js-art2'},
