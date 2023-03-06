@@ -283,10 +283,10 @@ let data = [
         'desc': 'No :( but it has a cool meaning in Vietnamese!',
         'links': [
           {
-            'icon': 'external-link', 'text': 'First name meaning', 'link': 'https://en.wiktionary.org/wiki/%E6%9F%8F'
+            'icon': 'external-link', 'text': 'First name', 'link': 'https://en.wiktionary.org/wiki/%E6%9F%8F'
           },
           {
-            'icon': 'external-link', 'text': 'Middle name meaning', 'link': 'https://en.wiktionary.org/wiki/%E6%98%A5'
+            'icon': 'external-link', 'text': 'Middle name', 'link': 'https://en.wiktionary.org/wiki/%E6%98%A5'
           }
         ]
       },
@@ -308,7 +308,7 @@ let data = [
         'desc': 'I like to code, produce music, and make short films :)',
         'links': [
           {
-            'icon': 'github', 'text': 'Github repo', 'link': 'https://github.com/BachToTheFuture',
+            'icon': 'github', 'text': 'Repo', 'link': 'https://github.com/BachToTheFuture',
           },
           {
             'icon': 'soundcloud', 'text': 'Soundcloud', 'link': '404.html',

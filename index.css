@@ -29,20 +29,21 @@ body {
 h1 {
   opacity: 90%;
   font-size: 3.5rem;
-  margin-top: -20px;
-  letter-spacing: 2px;
+  margin-top: 20px;
+  /* letter-spacing: 5px; */
+  line-height:10px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   opacity: 60%;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 h3 {
   font-size: 1.75rem;
   opacity: 60%;
-  margin-top: 15px;
+  margin-top: 4vh;
 }
 
 .footer {
@@ -58,9 +59,12 @@ h3 {
   justify-content: center;
   height: 100vh;
   display: flex;
-  margin-left: -100px;
-  position: relative;
-  transform: rotate(30deg);
+  position: absolute;
+  top: 32%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  transform: translateX(-5vw) rotate(30deg);
 }
 
 .ipod {
@@ -158,6 +162,7 @@ a {
   color: #444;
   opacity: 80%;
   transition: ease all 0.2s;
+  line-height: 1px;
 }
 a:hover {
   color: rgb(var(--theme));
@@ -245,4 +250,27 @@ a:hover {
   font-size: 10rem;
   margin-top: 100px;
   margin-bottom: -50px;
+}
+
+/* Responsive stuff */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  a {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1px;
+  }
+  .items {
+    position: absolute;
+    top: 32%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translateX(-10%) rotate(30deg);
+  }
 }
