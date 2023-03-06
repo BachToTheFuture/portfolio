@@ -18,7 +18,9 @@ function setTexts(data) {
     if (link.link) linkDiv.append(`<a target="_blank" href="${link.link}"><i class="fa fa-${link.icon}"></i> ${link.text}</a>`);
     else linkDiv.append(`<a href="#"><i class="fa fa-${link.icon}"></i> ${link.text}</a>`);
     
-    linkDiv.append('<span class="separator"> / </span>');
+    if (!data.linkNewLine) linkDiv.append('<span class="separator"> / </span>');
+    else linkDiv.append('<br>');
+
   }
   linkDiv.children().last().css('opacity', '0');
   // update color as well

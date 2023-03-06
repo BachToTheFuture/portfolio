@@ -17,7 +17,7 @@ let data = [
     'intro': 'Here are some of my',
     'name': 'Experiences',
     'color': '216, 232, 251',
-    'desc': 'click the center button to see more!',
+    'desc': 'center button to see more!',
     'links': [
       {'icon': 'github', 'text': 'Github', 'link': 'https://github.com/BachToTheFuture'},
       {'icon': 'linkedin-square', 'text': 'LinkedIn', 'link': 'https://www.linkedin.com/in/bach2thefuture/'},
@@ -25,10 +25,10 @@ let data = [
     ],
     'submenu': [
       {
-        'intro': "Through my experiences, I gained many",
+        'intro': "If you are curious about my work experience, here are my",
         'name': 'Proficiencies',
         'color': '250, 242, 225',
-        'desc': 'click the center button to see more!',
+        'desc': 'center button to see more!',
         'links': [],
         'submenu': [
           {
@@ -113,12 +113,12 @@ let data = [
       },
       {
         'intro': "Throughout high school, I contributed to",
-        'name': 'Haiku OS',
+        'name': 'HaikuOS',
         'color': '250, 242, 225',
         'desc': 'made code contributions to an open source project',
         'links': [
-          {'icon': 'external-link', 'text': 'Support Haiku OS!', 'link': 'https://www.haiku-os.org/'},
-          {'icon': 'code', 'text': 'See my contributions', 'link': 'https://github.com/BachToTheFuture?tab=overview&from=2018-12-01&to=2018-12-31'}
+          {'icon': 'external-link', 'text': 'HaikuOS', 'link': 'https://www.haiku-os.org/'},
+          {'icon': 'code', 'text': 'My contributions', 'link': 'https://github.com/BachToTheFuture?tab=overview&from=2018-12-01&to=2018-12-31'}
         ]
       },
     ]
@@ -227,6 +227,7 @@ let data = [
         'color': '255, 210, 207',
         'desc': "here are some pieces I played:",
         'artist': 'Performed by me!',
+        'linkNewLine': true,
         'links': [
           {'icon': 'youtube-play', 'text': 'Hungarian Rhapsody no. 2', 'link': 'https://youtu.be/0yGbzDQZwnc'},
           {'icon': 'youtube-play', 'text': 'Les Cloches de Geneve', 'link': 'https://youtu.be/-WEh3vpgksk'},
@@ -268,7 +269,7 @@ let data = [
   {
     'intro': "If you have some time",
     'name': 'Get to know me!',
-    'desc': 'click the center button for some fun facts :)',
+    'desc': 'center button for fun facts :)',
     'color': '216, 232, 251',
     'links': [
       {'icon': 'github', 'text': 'Github', 'link': 'https://github.com/BachToTheFuture'},
@@ -281,12 +282,13 @@ let data = [
         'name': 'Name etymology',
         'color': '208, 242, 230',
         'desc': 'No :( but it has a cool meaning in Vietnamese!',
+        'linkNewLine': true,
         'links': [
           {
-            'icon': 'external-link', 'text': 'First name', 'link': 'https://en.wiktionary.org/wiki/%E6%9F%8F'
+            'icon': 'external-link', 'text': 'First name meaning', 'link': 'https://en.wiktionary.org/wiki/%E6%9F%8F'
           },
           {
-            'icon': 'external-link', 'text': 'Middle name', 'link': 'https://en.wiktionary.org/wiki/%E6%98%A5'
+            'icon': 'external-link', 'text': 'Middle name meaning', 'link': 'https://en.wiktionary.org/wiki/%E6%98%A5'
           }
         ]
       },
